@@ -1,18 +1,18 @@
 #include <stdio.h>
 
 int main(int argc, const char * argv[]) {
-    int amount = 100;
-    int price = 0;
+    double amount ;
+    double price ;
     
     printf("请输入价格");
-    scanf("%d",&price);
+    scanf("%lf",&price);
     
     printf("请输入面值");
-    scanf("%d",&amount);
+    scanf("%lf",&amount);
     
-    int change = amount - price ;
+    double change = amount - price ;
     
-    printf("找%d\n",change);
+    printf("找%lf\n",change);
     
     return 0;
 }
