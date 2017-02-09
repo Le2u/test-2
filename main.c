@@ -9,12 +9,13 @@
 #include <stdio.h>
 
 int main(int argc, const char * argv[]) {
+    const int amount = 100;
     int price = 0;
     
     printf("请输入价格");
     scanf("%d",&price);
     
-    int change = 100 - price ;
+    int change = amount - price ;
     
     printf("找%d\n",change);
     
