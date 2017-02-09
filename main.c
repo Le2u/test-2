@@ -12,7 +12,7 @@ int main(int argc, const char * argv[]) {
     
     double change = amount - price ;
     
-    printf("找%lf\n",change);
+    printf("找%f\n",change);
     
     return 0;
 }
