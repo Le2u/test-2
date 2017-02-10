@@ -1,3 +1,4 @@
+
 #include <stdio.h>
 
 int main(int argc, const char * argv[]) {
@@ -10,9 +11,11 @@ int main(int argc, const char * argv[]) {
     printf("请输入面值");
     scanf("%lf",&amount);
     
-    double change = amount - price ;
-    
-    printf("找%f\n",change);
+    if ( amount >= price ) {
+        printf("找您%f元\n", amount - price );
+    }else{
+        printf("您支付的金额不足\n");
+    }
     
     return 0;
 }
