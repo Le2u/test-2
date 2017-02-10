@@ -14,7 +14,7 @@ int main(int argc, const char * argv[]) {
     if ( amount >= price ) {
         printf("找您%f元\n", amount - price );
     }else{
-        printf("您支付的金额不足\n");
+        printf("您支付的金额不足\n还需要%f元\n",price - amount );
     }
     
     return 0;
